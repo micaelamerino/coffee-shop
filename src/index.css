@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: Balsamiq;
+    src: url("./assets/fonts/BalsamiqSans-Regular.ttf");
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: Balsamiq;
+    font-display: swap;
+}

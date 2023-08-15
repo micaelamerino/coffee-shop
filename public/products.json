@@ -1,0 +1,93 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Tostado pan de campo",
+            "price": 950,
+            "description": "Queso cheddar, jamón cocido, tomate.",
+            "quantity": 1,
+            "image": "https://i.ibb.co/N6h27qn/sandwich.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Latte",
+            "price": 700,
+            "description": "Espresso con leche.",
+            "quantity": 1,
+            "image": "https://i.ibb.co/NYr1ssK/latte.jpg" 
+        },
+        {
+            "id": 3,
+            "name": "Cappuccino",
+            "price": 750,
+            "description": "Espresso, leche, canela y cacao en polvo.",
+            "quantity": 1,
+            "image": "https://i.ibb.co/vkv0LXd/cappuccino.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Jugo de naranja",
+            "price": 560,
+            "description": "Jugo exprimido natural.",
+            "quantity": 1,
+            "image": "https://i.ibb.co/D7fGCqb/jugo.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Moka",
+            "price": 750,
+            "description": "Espresso con leche, cacao en polvo y vainilla",
+            "quantity": 1,
+            "image": "https://i.ibb.co/LrYHcqH/moka.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Alfajor de maicena",
+            "price": 250,
+            "description": "Tapas de maicena, relleno de dulce de leche y coco rallado.",
+            "quantity": 1,
+            "image": "https://i.ibb.co/64cz7YK/alfajor.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Macchiato",
+            "price": 450,
+            "description": "Espresso con una pequeña cantidad de leche.",
+            "quantity": 1,
+            "image": "https://i.ibb.co/ZX6mWxZ/cortado.jpg" 
+        },
+        {
+            "id": 8,
+            "name": "Muffin",
+            "price": 550,
+            "description": "Chocolate con chips, relleno de dulce de leche.",
+            "quantity": 1,
+            "image": "https://i.ibb.co/mFkmcqs/muffins.jpg" 
+        },
+        {
+            "id": 9,
+            "name": "Brownie",
+            "price": 350,
+            "description": "Chocolate con nueces.",
+            "quantity": 1,
+            "image": "https://i.ibb.co/bBNzwjL/brownie.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Iced latte",
+            "price": 650,
+            "description": "Espresso con leche fría y hielo.",
+            "quantity": 1,
+            "image": "https://i.ibb.co/VNpbDqJ/iced.jpg" 
+        },
+        {
+            "id": 11,
+            "name": "Matcha latte",
+            "price": 550,
+            "description": "Té verde con leche.",
+            "quantity": 1,
+            "image": "https://i.ibb.co/Jkv2gpR/matcha.jpg" 
+        }
+
+    ]
+}
