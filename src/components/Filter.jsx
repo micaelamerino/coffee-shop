@@ -35,12 +35,12 @@ const Filter = () => {
           type="text"
           id="name"
           placeholder="Latte, jugo, muffin..."
-          className="px-1 py-2 rounded-md border-2 border-fucsia text-black"
+          className="input-style"
           autoComplete="on"
         />
         <button
           type="submit"
-          className="bg-gris border border-amarillo p-2 text-white rounded-md hover:bg-fucsia hover:text-white duration-500"
+          className="btn-form"
         >
           Buscar
         </button>

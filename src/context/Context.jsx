@@ -8,6 +8,7 @@ const Data = ({ children }) => {
   const [error, setError] = useState("");
   const [order, setOrder] = useState([]);
   const [message, setMessage] = useState("");
+  const [finish, setFinish] = useState(false);
 
   useEffect(() => {
     const getData = async () => {
@@ -27,7 +28,19 @@ const Data = ({ children }) => {
   }, []);
 
   return (
-    <Context.Provider value={{ data, products, setProducts, order, setOrder, message, setMessage }}>
+    <Context.Provider
+      value={{
+        data,
+        products,
+        setProducts,
+        order,
+        setOrder,
+        message,
+        setMessage,
+        setFinish,
+        finish,
+      }}
+    >
       {children}
     </Context.Provider>
   );

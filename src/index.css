@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
     font-family: Balsamiq;
     src: url("./assets/fonts/BalsamiqSans-Regular.ttf");
@@ -11,4 +12,16 @@ body {
     color: #fff;
     font-family: Balsamiq;
     font-display: swap;
+}
+
+.btn-card {
+    @apply bg-fucsia p-2 text-white rounded-md hover:bg-gris hover:text-amarillo duration-500
+}
+
+.btn-form {
+    @apply bg-gris border border-amarillo p-2 text-white rounded-md hover:bg-fucsia hover:text-white duration-500
+}
+
+.input-style {
+    @apply px-1 py-2 rounded-md border-2 border-fucsia text-black
 }

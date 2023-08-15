@@ -22,7 +22,7 @@ const Message = () => {
         id="message"
         className="rounded-md h-36 bg-gris border border-amarillo text-white"
       ></textarea>
-      <button className="bg-gris border border-amarillo p-2 text-white rounded-md hover:bg-fucsia hover:text-white duration-500">Enviar</button>
+      <button className="btn-form">Enviar</button>
     </form>
   );
 };

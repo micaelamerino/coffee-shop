@@ -23,7 +23,7 @@ const AddButton = ({ prod }) => {
     <button
       onClick={() => handleClick(prod)}
       type="button"
-      className="bg-fucsia p-2 text-white rounded-md hover:bg-gris hover:text-amarillo duration-500"
+      className="btn-card"
     >
       Añadir
     </button>

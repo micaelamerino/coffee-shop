@@ -1,18 +1,25 @@
 import { useContext } from "react";
 import { Context } from "../context/Context";
-import FinishButton from "../components/FinishButton";
 import gif from "../assets/gif.gif";
 import Message from "../components/Message";
 import QuantityButton from "../components/QuantityButton";
 
 const Order = () => {
-  const { order, message } = useContext(Context);
+  const { order, message, setMessage, setFinish } = useContext(Context);
 
   const total = order.reduce(
     (acc, elem) => acc + elem.price * elem.quantity,
     0
   );
 
+  const resetMessage = () => {
+    setMessage("");
+  };
+
+  const finishBuy = () => {
+    setFinish(true)
+  }
+  
   return (
     <main className="mt-5 flex flex-col gap-2">
       <div>
@@ -34,6 +41,12 @@ const Order = () => {
                 <div>
                   <h3 className="text-amarillo">Aclaración del cliente:</h3>
                   <p>{message}</p>
+                  <button
+                    onClick={resetMessage}
+                    className="btn-form"
+                  >
+                    Cambiar o eliminar
+                  </button>
                 </div>
               ) : (
                 <Message />
@@ -43,14 +56,20 @@ const Order = () => {
 
           <div className="flex flex-col items-start gap-3">
             <p>Total: $ {total}</p>
-            <FinishButton />
+            <button
+            onClick={finishBuy}
+              type="button"
+              className="btn-form"
+            >
+              Finalizar compra
+            </button>
           </div>
         </>
       ) : (
         <>
           <section className="mt-5 flex flex-col gap-5">
             <h3 className="text-xl">
-              Añada un producto para iniciar <s></s>u orden
+              Añada un producto para iniciar su orden
             </h3>
             <div className="w-40 h-40">
               <img
