@@ -36,7 +36,8 @@ const Data = ({ children }) => {
         order,
         setOrder,
         message,
-        setMessage
+        setMessage,
+        error
       }}
     >
       {children}
