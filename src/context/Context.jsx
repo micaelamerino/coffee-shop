@@ -8,7 +8,7 @@ const Data = ({ children }) => {
   const [error, setError] = useState("");
   const [order, setOrder] = useState([]);
   const [message, setMessage] = useState("");
-  const [finish, setFinish] = useState(false);
+ 
 
   useEffect(() => {
     const getData = async () => {
@@ -36,9 +36,7 @@ const Data = ({ children }) => {
         order,
         setOrder,
         message,
-        setMessage,
-        setFinish,
-        finish,
+        setMessage
       }}
     >
       {children}
