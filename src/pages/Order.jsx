@@ -6,7 +6,7 @@ import QuantityButton from "../components/QuantityButton";
 import Swal from "sweetalert2";
 
 const Order = () => {
-  const { order, message, setMessage, setOrder } = useContext(Context);
+  const { order, message, setMessage, setOrder, setProducts, data } = useContext(Context);
 
   const total = order.reduce(
     (acc, elem) => acc + elem.price * elem.quantity,
@@ -30,6 +30,7 @@ const Order = () => {
     generarId();
 
     setOrder([]);
+    setProducts(data)
   };
 
   return (
